@@ -48,13 +48,14 @@
     <body>
         <div style="min-height: 100vh">
             <div class="d-flex flex-row i-bg-dark p-3">
-                <img class="rounded-circle card-img-top ml-5" src="img/profile_pic.jpg" alt="Profile pic" style="width: 48px; height: 48px;">
-                <div class="d-flex flex-column px-4">
+                <img class="rounded-circle card-img-top ml-2 ml-sm-5" src="img/profile_pic.jpg" alt="Profile pic" style="width: 48px; height: 48px;">
+                <div class="d-flex flex-column px-2 px-sm-4">
                     <h5>Ruben "Iridum" Hormigo</h5>
                     <h6 class="text-muted">Computer Science Student</h6>
                 </div>
             </div>
-            <div class="d-flex flex-column p-1 p-sm-5">
+
+            <div class="d-none d-sm-flex flex-column p-sm-5">
                 <p>
                     <h1><b>Hello!</b></h1>
                     <h2>I build webpages and applications.</h2>
@@ -62,7 +63,6 @@
                 </p>
                 <p><h1>Get in touch with me!</h1></p>
                 <div class="d-flex flex-row flex-wrap">
-                    <a href=''></a>
                     <a onclick="prompt('Email', 'iridumde&#118;&#64;gma&#105;l&#46;c&#111;m');" class="text-muted p-3">
                         <p style="font-size: 350%;"><i class="fas fa-envelope"></i></p>
                     </a>
@@ -80,13 +80,36 @@
                     </a>
                 </div>
             </div>
+            <div class="d-flex d-sm-none flex-column p-3">
+                <p>
+                    <h4><b>Hello!</b></h4>
+                    <h5>I build webpages and applications.</h5>
+                    <h6>Do you have a project or idea?</h6>
+                </p>
+                <p><h4>Get in touch with me!</h4></p>
+                <div class="d-flex flex-row flex-wrap">
+                    <a onclick="prompt('Email', 'iridumde&#118;&#64;gma&#105;l&#46;c&#111;m');" class="text-muted p-3">
+                        <p style="font-size: 150%;"><i class="fas fa-envelope"></i></p>
+                    </a>
+                    <a href="https://github.com/Iridum/" target="_blank" class="text-muted p-3">
+                        <p style="font-size: 150%;"><i class="fab fa-github"></i></p>
+                    </a>
+                    <a onclick="prompt('Discord username', 'Iridum#6483');" class="text-muted p-3">
+                        <p style="font-size: 150%;"><i class="fab fa-discord"></i></p>
+                    </a>
+                    <a href="https://twitter.com/cmpleu/" target="_blank" class="text-muted p-3">
+                        <p style="font-size: 150%;"><i class="fab fa-twitter"></i></p>
+                    </a>
+                    <a href="https://www.instagram.com/cmpleu/" target="_blank" class="text-muted p-3">
+                        <p style="font-size: 150%;"><i class="fab fa-instagram"></i></p>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="p-1 p-sm-5 i-bg-light">
-            <h2 class="pb-2">Projects</h2>
-
-
-                <div class="row">
+        <div class="p-3 p-sm-5 i-bg-light">
+            <h2 class="ml-3 py-3">Projects</h2>
+                <div class="d-flex flex-row flex-wrap">
                     <div class="col-xl-6 pb-4">
                         <div class="card card-body">
                             <h4 class="card-title">Hamaker</h4>
