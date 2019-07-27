@@ -1,0 +1,36 @@
+/*
+    Created on : 22-oct-2018, 15:35:57
+    Author     : iridum
+*/
+
+body { color: white; background-color: #333; }
+
+.i-bg-dark { background-color: #111; }
+
+.i-bg-light { background-color: #444; }
+
+
+.top-nav-collapse { background-color: #007bff; }
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-1 { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../img/header.png"); }
+
+.card { color: white; background-color: #333; }
+.btn-rounded {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex !important;
+}
+.btn-primary-t5 { background: rgba(66, 133, 244, 0.5); color: #fff !important; }
+
+@media (max-width:767px) {
+      .rounded-xs-0 { border-radius: 0px; }
+}
