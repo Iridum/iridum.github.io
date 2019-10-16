@@ -3,21 +3,36 @@
     Author     : iridum
 */
 
-body { color: white; background-color: #333; }
+.f-poppins { font-family: 'Poppins', sans-serif; }
 
-.i-bg-dark { background-color: #111; }
+a { color: #000; }
+a:hover { color: #444; }
+.badge { font-size: 100%; }
 
-.i-bg-light { background-color: #444; }
 
-.card { color: white; background-color: #333; }
+.welcome-container {
+    height: 100vh;
+    background: linear-gradient(-60deg, #55CDFC 20%, #F7A8B8 80%);
+    background-size: 500% 500%;
+    background-attachment: fixed;
+    animation: gradientBG 15s ease infinite;
+}
 
-.i-bg-light-skew {
-    background: linear-gradient(
-                 -2deg,
-                 transparent 10%,
-                 #444 10%,
-                 #444 90%,
-                 transparent 90%);
-    padding-top: 4.5rem !important;
-    padding-bottom: 4.5rem !important;
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
 }

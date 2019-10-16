@@ -40,100 +40,77 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <!-- code-prettify core CSS -->
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <!-- Extra css -->
         <link href="css/extra.css" rel="stylesheet">
     </head>
     <body>
         <div style="min-height: 100vh">
-            <div class="d-flex flex-row i-bg-dark p-3">
-                <img class="rounded-circle card-img-top ml-2 ml-sm-5" src="img/profile_pic.jpg" alt="Profile pic" style="width: 48px; height: 48px;">
-                <div class="d-flex flex-column px-2 px-sm-4">
-                    <h5>Iridum</h5>
-                    <h6 class="text-muted">Computer Engineering Student</h6>
-                </div>
-            </div>
-
-            <div class="d-none d-sm-flex flex-column p-sm-5">
-                <p>
-                    <h1><b>Hello!</b></h1>
-                    <h2>I build webpages and applications.</h2>
-                    <h3>Do you have a project or idea?</h3>
-                </p>
-                <p><h1>Get in touch with me!</h1></p>
-                <div class="d-flex flex-row flex-wrap">
-                    <a onclick="prompt('Email', 'iridumde&#118;&#64;gma&#105;l&#46;c&#111;m');" class="text-muted p-3">
-                        <p style="font-size: 350%;"><i class="fas fa-envelope"></i></p>
-                    </a>
-                    <a href="https://github.com/Iridum/" target="_blank" class="text-muted p-3">
-                        <p style="font-size: 350%;"><i class="fab fa-github"></i></p>
-                    </a>
-                    <a onclick="prompt('Discord username', 'Iridum#6483');" class="text-muted p-3">
-                        <p style="font-size: 350%;"><i class="fab fa-discord"></i></p>
-                    </a>
-                    <a href="https://twitter.com/cmpleu/" target="_blank" class="text-muted p-3">
-                        <p style="font-size: 350%;"><i class="fab fa-twitter"></i></p>
-                    </a>
-                    <a href="https://www.instagram.com/cmpleu/" target="_blank" class="text-muted p-3">
-                        <p style="font-size: 350%;"><i class="fab fa-instagram"></i></p>
-                    </a>
-                </div>
-            </div>
-            <div class="d-flex d-sm-none flex-column p-3">
-                <p>
-                    <h4><b>Hello!</b></h4>
-                    <h5>I build webpages and applications.</h5>
-                    <h6>Do you have a project or idea?</h6>
-                </p>
-                <p><h4>Get in touch with me!</h4></p>
-                <div class="d-flex flex-row flex-wrap">
-                    <a onclick="prompt('Email', 'iridumde&#118;&#64;gma&#105;l&#46;c&#111;m');" class="text-muted p-3">
-                        <p style="font-size: 150%;"><i class="fas fa-envelope"></i></p>
-                    </a>
-                    <a href="https://github.com/Iridum/" target="_blank" class="text-muted p-3">
-                        <p style="font-size: 150%;"><i class="fab fa-github"></i></p>
-                    </a>
-                    <a onclick="prompt('Discord username', 'Iridum#6483');" class="text-muted p-3">
-                        <p style="font-size: 150%;"><i class="fab fa-discord"></i></p>
-                    </a>
-                    <a href="https://twitter.com/cmpleu/" target="_blank" class="text-muted p-3">
-                        <p style="font-size: 150%;"><i class="fab fa-twitter"></i></p>
-                    </a>
-                    <a href="https://www.instagram.com/cmpleu/" target="_blank" class="text-muted p-3">
-                        <p style="font-size: 150%;"><i class="fab fa-instagram"></i></p>
-                    </a>
+            <div class="welcome-container d-flex flex-column">
+                <div class="d-flex flex-column flex-fill align-items-center justify-content-center">
+                    <img class="rounded-circle" src="img/profile_pic.jpg" alt="Profile pic" style="width: 128px; height: 128px;">
+                    <div class="d-flex flex-column py-4">
+                        <h1 class="f-poppins text-center">Iridum</h1>
+                        <h4 class="text-center">Computer Engineering Student</h4>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <a href="#" onclick="prompt('Email', 'iridumde&#118;&#64;gma&#105;l&#46;c&#111;m');" class="waves-effect px-3 my-3">
+                            <p class="m-0" style="font-size: 350%;"><i class="fas fa-envelope"></i></p>
+                        </a>
+                        <a href="https://github.com/Iridum/" target="_blank" class="waves-effect px-3 my-3">
+                            <p class="m-0" style="font-size: 350%;"><i class="fab fa-github"></i></p>
+                        </a>
+                        <a href="https://www.instagram.com/cmpleu/" target="_blank" class="waves-effect px-3 my-3">
+                            <p class="m-0" style="font-size: 350%;"><i class="fab fa-instagram"></i></p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="p-3 p-sm-5 i-bg-light-skew">
+        <div class="px-1 py-5 p-sm-5">
+            <h2 class="f-poppins text-center">About me</h2>
+            <h5 class="text-center text-justify p-5">Hi! I'm a Computer Engineering Student from UPC.<br>I love building webpages and applications since I started programming at the age of 14.</h5>
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+                <h4 class="font-weight-bold mx-5 my-2">HTML</h4>
+                <h4 class="font-weight-bold mx-5 my-2">JS</h4>
+                <h4 class="font-weight-bold mx-5 my-2">CSS</h4>
+                <h4 class="font-weight-bold mx-5 my-2">C++</h4>
+                <h4 class="font-weight-bold mx-5 my-2">Java</h4>
+            </div>
+        </div>
 
-            <h2 class="ml-3 py-3">Projects</h2>
+        <div class="px-1 py-5 p-sm-5">
+            <h2 class="f-poppins text-center pb-4">Projects</h2>
             <div class="d-flex flex-row flex-wrap">
-                <div class="col-xl-6 pb-4">
-                    <div class="card card-body">
-                        <h4 class="card-title">Hamaker</h4>
-                        <p class="card-text">Convert an image into a pixel art or hama art</p>
-                        <div class="flex-row">
-                            <a href="Hamaker" target="_blank" class="btn btn-primary btn-block">Webpage</a>
-                        </div>
+                <a href="Hamaker" target="_blank" class="d-flex flex-row col-xl-6 py-2 mb-5 waves-effect">
+                    <section class="d-flex flex-column flex-fill mr-3" style="margin: auto 0;">
+                        <h4 class="text-right font-weight-bold m-0">Hamaker</h4>
+                        <p class="text-right text-justify m-0">Convert an image into a pixel art or hama art</p>
+                    </section>
+                    <img src="https://iridum.github.io/Hamaker/icons/launcher-icon-128.png" alt="Hamaker icon" style="width: 64px; height: 64px; margin: auto 0;">
+                </a>
+                <a href="https://devpost.com/software/calendar-schedule" target="_blank" class="d-flex flex-row col-xl-6 py-2 mb-5 waves-effect">
+                    <img src="img/cs-icon-128.png" alt="Calendar Shcredule icon" style="width: 64px; height: 64px; margin: auto 0;">
+                    <div class="d-flex flex-column flex-fill ml-3" style="margin: auto 0;">
+                        <h4 class="font-weight-bold m-0">Calendar Schedule</h4>
+                        <p class="text-justify m-0">Student of UPC? Having trouble with your timetable? So do we! Let's fix that! </p>
+                        <span class="badge badge-warning m-1">Winner iThinkUPC 2019</span>
                     </div>
-                </div>
-                <div class="col-xl-6 pb-4">
-                    <div class="card card-body">
-                        <h4 class="card-title">PacoBot <span class="badge badge-warning ml-2">Work in progress</span></h4>
-                        <p class="card-text">A Neural Network that learns to play Parchis based on the genetic algorithm.</p>
-                        <div class="flex-row">
-                            <a href="pacobot" target="_blank" class="btn btn-primary btn-block disabled">Webpage</a>
-                        </div>
-                    </div>
-                </div>
+                </a>
+                <a href="Hamaker" target="_blank" class="d-flex flex-row col-xl-6 py-2 mb-5 waves-effect disabled">
+                    <section class="d-flex flex-column flex-fill mr-3" style="margin: auto 0;">
+                        <h4 class="text-right font-weight-bold m-0">Elastic Launcher</h4>
+                        <p class="text-right text-justify m-0">Sync a Modded Minecraft Server with the client without effort.</p>
+                        <span class="badge badge-info m-1">Work in progress</span>
+                    </section>
+                </a>
             </div>
         </div>
 
-        <div class="d-flex flex-row p-2 p-sm-4">
-            <h5 class="ml-1 ml-sm-5">Designed by <a href="https://iridum.github.io">Iridum</a></h5>
+        <div class="d-flex flex-column p-3 p-sm-4" style="background-color: #222; color: white !important;">
+            <h5 class="text-center">Designed with love by Iridum</h5>
         </div>
 
         <!-- JQuery -->
@@ -144,15 +121,5 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
-
-        <script type="text/javascript">
-            $('[href*="#"]').on('click', function (e) {
-                e.preventDefault();
-
-                $('html, body').animate({
-                        scrollTop: $($(this).attr('href')).offset().top
-                }, 750, 'linear');
-            });
-        </script>
     </body>
 </html>
