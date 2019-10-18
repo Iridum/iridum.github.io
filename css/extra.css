@@ -14,37 +14,33 @@ a:hover { color: #888; }
     height: 100vh;
 }
 
-.wallpaper {
-    background-image: url("../img/wallpaper.jpeg");
-    background-repeat: no-repeat;
-    background-size: auto 150%;
-    background-attachment: fixed;
+.f-gw {
     color: white;
     text-shadow: 1px 0 0 #555, -1px 0 0 #555, 0 1px 0 #555, 0 -1px 0 #555, 1px 1px #555, -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555;
 }
 
-/*
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}*/
-
-/*
-.welcome-container {
-    height: 100vh;
+.wallpaper {
+    background-image: url("../img/wallpaper.jpeg");
+    background-size: 150% auto !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 150vw;
+    height: 150vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.gradient {
-    background: linear-gradient(-30deg, #55CDFC 0%, #F7A8B8 70%);
-    background-attachment: fixed;
-}*/
+.b-nor {
+    background-color: #fff;
+    color: black;
+}
 
 .b-inv {
     background-color: #222;
