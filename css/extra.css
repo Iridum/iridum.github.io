@@ -5,19 +5,25 @@
 
 .f-poppins { font-family: 'Poppins', sans-serif; }
 
-a { color: #000; }
-a:hover { color: #444; }
-.badge { font-size: 100%; }
+a { color: inherit; }
+a:hover { color: #888; }
 
+.badge { font-size: 100%; }
 
 .welcome-container {
     height: 100vh;
-    background: linear-gradient(-60deg, #55CDFC 20%, #F7A8B8 80%);
-    background-size: 500% 500%;
-    background-attachment: fixed;
-    animation: gradientBG 15s ease infinite;
 }
 
+.wallpaper {
+    background-image: url("../img/wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 1px 0 0 #555, -1px 0 0 #555, 0 1px 0 #555, 0 -1px 0 #555, 1px 1px #555, -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555;
+}
+
+/*
 @keyframes gradientBG {
     0% {
         background-position: 0% 50%;
@@ -28,11 +34,19 @@ a:hover { color: #444; }
     100% {
         background-position: 0% 50%;
     }
+}*/
+
+/*
+.welcome-container {
+    height: 100vh;
 }
 
-.container {
-    width: 100%;
-    position: absolute;
-    top: 35%;
-    text-align: center;
+.gradient {
+    background: linear-gradient(-30deg, #55CDFC 0%, #F7A8B8 70%);
+    background-attachment: fixed;
+}*/
+
+.b-inv {
+    background-color: #222;
+    color: white;
 }
