@@ -123,6 +123,7 @@
         $(document).bind("mousemove", function(e) {
             var x = (e.pageX)/($(window).width())*100;
             var y = (e.pageY - $(window).scrollTop())/($(window).height())*100;
+            if(x > 100) x = 100;
             $(".wallpaper").css("background-position", x+"% "+y+"%");
          });
          /*
