@@ -21,7 +21,7 @@ a:hover { color: #888; }
 
 .wallpaper {
     background-image: url("../img/wallpaper.jpeg");
-    background-size: 150% auto !important;
+    background-size: auto 150% !important;
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 150vw;
